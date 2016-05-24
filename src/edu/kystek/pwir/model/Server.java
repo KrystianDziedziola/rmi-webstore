@@ -1,5 +1,8 @@
 package edu.kystek.pwir.model;
 
+import edu.kystek.pwir.controller.ShopImpl;
+import edu.kystek.pwir.model.exception.Connection;
+
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
