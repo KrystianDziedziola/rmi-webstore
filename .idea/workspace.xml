@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="403761b0-cf5c-496e-b3bf-4096f093234b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/view/client/LoginWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/view/ConsoleView.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/view/client/LoginWindow.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/controller/ClientController.class" afterPath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/controller/ClientController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/Client.class" afterPath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/Connection.class" afterPath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/Connection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/Shop.class" afterPath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/Shop.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/ShopImpl.class" afterPath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/ShopImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/controller/ServerController.class" afterPath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/controller/ServerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/Server.class" afterPath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/Server.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ServerController.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ServerController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Client.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Server.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Server.java" />
     </list>
     <ignored path="rmi-webstore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginWindow.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/view/client/LoginWindow.java">
+      <file leaf-file-name="Shop.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Shop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="85">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,11 +54,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java">
+      <file leaf-file-name="ConsoleView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/view/ConsoleView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#94#95#0" expanded="true" />
+                <element signature="e#134#135#0" expanded="true" />
+                <element signature="e#177#178#0" expanded="true" />
+                <element signature="e#217#218#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,12 +114,13 @@
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Connection.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Shop.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/ShopImpl.java" />
-        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java" />
-        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Client.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/view/server/Console.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Server.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ServerController.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/view/client/LoginWindow.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/view/ConsoleView.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Client.java" />
       </list>
     </option>
   </component>
@@ -186,7 +209,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -755,12 +778,20 @@
       <updated>1464087833266</updated>
       <workItem from="1464087835256" duration="2235000" />
       <workItem from="1464090075250" duration="8740000" />
-      <workItem from="1464101866407" duration="967000" />
+      <workItem from="1464101866407" duration="2627000" />
     </task>
+    <task id="LOCAL-00001" summary="Created empty login window and handled running exceptions of client and server">
+      <created>1464102877234</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1464102877234</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11942000" />
+    <option name="totallyTimeSpent" value="13602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-240" width="1936" height="1056" extended-state="6" />
@@ -780,6 +811,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -790,7 +822,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -798,7 +829,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created simple client-server connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created simple client-server connection" />
+    <MESSAGE value="Created empty login window and handled running exceptions of client and server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created empty login window and handled running exceptions of client and server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -814,7 +846,7 @@
         <state relative-caret-position="68">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -824,7 +856,7 @@
         <state relative-caret-position="221">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -833,9 +865,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -845,8 +875,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -867,7 +895,7 @@
         <state relative-caret-position="119">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -877,9 +905,8 @@
         <state relative-caret-position="136">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#437#438#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -890,8 +917,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -903,10 +928,10 @@
         <state relative-caret-position="238">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#160#161#0" expanded="false" />
+            <element signature="e#195#196#0" expanded="false" />
+            <element signature="e#218#219#0" expanded="false" />
+            <element signature="e#264#265#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -942,22 +967,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/ShopImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -967,18 +982,6 @@
         <state relative-caret-position="34">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,27 +1008,55 @@
         <state relative-caret-position="136">
           <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#437#438#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/view/client/LoginWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="238">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/view/ConsoleView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#94#95#0" expanded="true" />
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
