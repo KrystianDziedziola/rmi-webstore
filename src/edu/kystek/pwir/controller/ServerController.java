@@ -1,6 +1,6 @@
 package edu.kystek.pwir.controller;
 
-import edu.kystek.pwir.model.Server;
+import edu.kystek.pwir.model.rmi.Server;
 
 import java.rmi.RemoteException;
 

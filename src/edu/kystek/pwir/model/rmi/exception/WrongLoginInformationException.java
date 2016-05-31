@@ -1,4 +1,4 @@
-package edu.kystek.pwir.model.exception;
+package edu.kystek.pwir.model.rmi.exception;
 
 public class WrongLoginInformationException extends Exception {
 

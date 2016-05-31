@@ -1,4 +1,4 @@
-package edu.kystek.pwir.model;
+package edu.kystek.pwir.model.rmi;
 
 import java.io.Serializable;
 

@@ -1,8 +1,9 @@
-package edu.kystek.pwir.model;
+package edu.kystek.pwir.model.rmi;
 
 import edu.kystek.pwir.controller.Shop;
-import edu.kystek.pwir.model.exception.Connection;
-import edu.kystek.pwir.model.exception.WrongLoginInformationException;
+import edu.kystek.pwir.model.AccountType;
+import edu.kystek.pwir.model.rmi.exception.Connection;
+import edu.kystek.pwir.model.rmi.exception.WrongLoginInformationException;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -29,5 +30,9 @@ public class Client {
     public AccountType login(LoginInformation loginInformation)
             throws RemoteException, WrongLoginInformationException {
         return shop.login(loginInformation);
+    }
+
+    public void stop() {
+        System.exit(1);
     }
 }

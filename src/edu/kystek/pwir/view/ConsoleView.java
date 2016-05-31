@@ -1,8 +1,9 @@
 package edu.kystek.pwir.view;
 
 import edu.kystek.pwir.model.AccountType;
-import edu.kystek.pwir.model.LoginInformation;
+import edu.kystek.pwir.model.rmi.LoginInformation;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class ConsoleView {
@@ -50,4 +51,5 @@ public class ConsoleView {
         printLine("You logged in successfully!");
         printLine(String.format("Your account type is '%s'", type));
     }
+
 }
