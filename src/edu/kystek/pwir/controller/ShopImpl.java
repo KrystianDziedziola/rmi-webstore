@@ -2,16 +2,24 @@ package edu.kystek.pwir.controller;
 
 import edu.kystek.pwir.controller.helper.TextFileToListConverter;
 import edu.kystek.pwir.model.AccountType;
+import edu.kystek.pwir.model.Product;
 import edu.kystek.pwir.model.rmi.LoginInformation;
 import edu.kystek.pwir.model.rmi.exception.WrongLoginInformationException;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingDeque;
 
 public class ShopImpl extends UnicastRemoteObject implements Shop {
 
-    public ShopImpl() throws RemoteException {}
+    private BlockingQueue<Product> products = new LinkedBlockingDeque<>();
+
+    public ShopImpl() throws RemoteException {
+        products.add(new Product(1, "PC", "Asus", 3000, 20));
+        products.add(new Product(2, "Printer", "HP", 250, 10));
+    }
 
     @Override
     public String welcome() throws RemoteException {
@@ -44,5 +52,11 @@ public class ShopImpl extends UnicastRemoteObject implements Shop {
 
         throw new WrongLoginInformationException();
     }
+
+    @Override
+    public BlockingQueue<Product> getProductsList() throws RemoteException {
+        return products;
+    }
+
 
 }

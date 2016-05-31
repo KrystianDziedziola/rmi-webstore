@@ -2,6 +2,7 @@ package edu.kystek.pwir.model.rmi;
 
 import edu.kystek.pwir.controller.Shop;
 import edu.kystek.pwir.model.AccountType;
+import edu.kystek.pwir.model.Product;
 import edu.kystek.pwir.model.rmi.exception.Connection;
 import edu.kystek.pwir.model.rmi.exception.WrongLoginInformationException;
 
@@ -9,6 +10,7 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.util.concurrent.BlockingQueue;
 
 public class Client {
 
@@ -30,6 +32,10 @@ public class Client {
     public AccountType login(LoginInformation loginInformation)
             throws RemoteException, WrongLoginInformationException {
         return shop.login(loginInformation);
+    }
+
+    public BlockingQueue<Product> getProductsList() throws RemoteException {
+        return shop.getProductsList();
     }
 
     public void stop() {

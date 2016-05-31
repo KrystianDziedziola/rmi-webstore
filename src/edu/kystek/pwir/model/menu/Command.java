@@ -1,5 +1,9 @@
 package edu.kystek.pwir.model.menu;
 
+import edu.kystek.pwir.model.rmi.Client;
+
+import java.rmi.RemoteException;
+
 public interface Command {
-    public void execute();
+    void execute(Client client) throws RemoteException;
 }

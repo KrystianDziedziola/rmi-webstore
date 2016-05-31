@@ -1,30 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="403761b0-cf5c-496e-b3bf-4096f093234b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Account.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Admin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Customer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Command.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/MenuConstants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/MenuItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/ShowProducts.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/admin/AddProduct.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/customer/BuyProduct.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/model/Server.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Client.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Client.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/LoginInformation.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/LoginInformation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Server.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Server.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/exception/Connection.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/exception/Connection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/exception/WrongLoginInformationException.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/exception/WrongLoginInformationException.java" />
+    <list default="true" id="403761b0-cf5c-496e-b3bf-4096f093234b" name="Default" comment="Added getting and displaying all products">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Product.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Exit.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/controller/ClientController.class" afterPath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/controller/ClientController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/controller/ServerController.class" afterPath="$PROJECT_DIR$/out/production/rmi-webstore/edu/kystek/pwir/controller/ServerController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ServerController.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ServerController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/Shop.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/Shop.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ShopImpl.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ShopImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Account.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/Account.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Command.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Command.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/MenuConstants.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/MenuConstants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/ShowProducts.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/ShowProducts.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/admin/AddProduct.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/admin/AddProduct.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/customer/BuyProduct.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/customer/BuyProduct.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Client.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Server.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Server.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/kystek/pwir/view/ConsoleView.java" afterPath="$PROJECT_DIR$/src/edu/kystek/pwir/view/ConsoleView.java" />
     </list>
     <ignored path="rmi-webstore.iws" />
@@ -48,51 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Customer.java">
+      <file leaf-file-name="ShopImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/ShopImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-              <folding>
-                <element signature="e#151#152#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Admin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Admin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-              <folding>
-                <element signature="e#142#143#0" expanded="true" />
-                <element signature="e#187#188#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1014#1015#0" expanded="true" />
-                <element signature="e#1047#1048#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuConstants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/MenuConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="38" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="45" />
+            <state relative-caret-position="170">
+              <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -101,13 +53,19 @@
       <file leaf-file-name="AddProduct.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/admin/AddProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,21 +73,34 @@
       <file leaf-file-name="ShowProducts.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/ShowProducts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="272">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#259#260#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1154#1155#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+            <state relative-caret-position="299">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,38 +108,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuyProduct.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/customer/BuyProduct.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#300#301#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsoleView.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConsoleView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/view/ConsoleView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+            <state relative-caret-position="388">
+              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Client.java">
+      <file leaf-file-name="Exit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Exit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
-                <element signature="e#1031#1032#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Command.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Command.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -214,32 +182,35 @@
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/AccountType.java" />
         <option value="$PROJECT_DIR$/resources/accounts" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/LoginInformation.java" />
-        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/controller/Shop.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/WrongLoginInformationException.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Client.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/helper/TextFileToListConverter.java" />
-        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ShopImpl.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/exception/WrongLoginInformationException.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/constants/Connection.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Connection.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Server.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/exception/Connection.java" />
-        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Server.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Account.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Command.java" />
-        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Command.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/ShowItems.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/MenuItem.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Admin.java" />
-        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/admin/AddProduct.java" />
-        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Client.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Customer.java" />
-        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/ShowProducts.java" />
-        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/view/ConsoleView.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/MenuConstants.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/controller/Shop.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Server.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Client.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/customer/BuyProduct.java" />
-        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Account.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/admin/AddProduct.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/ShowProducts.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Product.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ShopImpl.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/view/ConsoleView.java" />
         <option value="$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Command.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/Account.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/exceptions/ExitException.java" />
+        <option value="$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Exit.java" />
       </list>
     </option>
   </component>
@@ -454,66 +425,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmi-webstore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmi-webstore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pwir" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="customer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmi-webstore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmi-webstore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pwir" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1089,7 +1000,7 @@
       <workItem from="1464090075250" duration="8740000" />
       <workItem from="1464101866407" duration="9086000" />
       <workItem from="1464609986714" duration="3742000" />
-      <workItem from="1464707201548" duration="1596000" />
+      <workItem from="1464707201548" duration="4881000" />
     </task>
     <task id="LOCAL-00001" summary="Created empty login window and handled running exceptions of client and server">
       <created>1464102877234</created>
@@ -1112,25 +1023,32 @@
       <option name="project" value="LOCAL" />
       <updated>1464110940166</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added simple menu which is different for admin and regular customer">
+      <created>1464708836615</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1464708836615</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25399000" />
+    <option name="totallyTimeSpent" value="28684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11886994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28494042" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28494042" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1165,7 +1083,9 @@
     <MESSAGE value="Created empty login window and handled running exceptions of client and server" />
     <MESSAGE value="Deleted login window. Application will have console view" />
     <MESSAGE value="Created login form. Not finished yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created login form. Not finished yet" />
+    <MESSAGE value="Added simple menu which is different for admin and regular customer" />
+    <MESSAGE value="Added getting and displaying all products" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added getting and displaying all products" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1176,31 +1096,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="80" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/ShopImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/exception/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1259,6 +1154,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1276,8 +1174,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="e#1265#1266#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1297,6 +1195,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1313,8 +1214,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="e#1265#1266#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1362,6 +1263,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,21 +1300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="80" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/ShopImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/starter/ClientStarter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1443,14 +1330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/MenuItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1471,40 +1350,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/MenuConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding>
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/view/ConsoleView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="4" column="68" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="68" />
           <folding />
         </state>
       </provider>
@@ -1520,68 +1369,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/rmi/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/customer/BuyProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/ShowProducts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="272">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/ShopImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/admin/AddProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/MenuConstants.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        <state relative-caret-position="422">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/controller/ClientController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+        <state relative-caret-position="299">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/exceptions/ExitException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/model/menu/Exit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/kystek/pwir/view/ConsoleView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

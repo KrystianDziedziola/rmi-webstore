@@ -52,4 +52,11 @@ public class ConsoleView {
         printLine(String.format("Your account type is '%s'", type));
     }
 
+    public void waitForEnter() {
+        try {
+            System.in.read();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

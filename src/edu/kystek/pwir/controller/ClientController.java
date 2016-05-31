@@ -25,8 +25,17 @@ public class ClientController {
     }
 
     private void showMenu() {
-        account.showMenu();
-        account.getAnswer().execute();
+        try {
+            while(true) {
+                account.showMenu();
+                account.getAnswer().execute(client);
+                view.printEmptyLine();
+                view.print("Press enter to continue...");
+                view.waitForEnter();
+            }
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
     }
 
     private void connectToServer() {
