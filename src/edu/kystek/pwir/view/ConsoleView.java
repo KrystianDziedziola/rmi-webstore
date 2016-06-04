@@ -1,6 +1,7 @@
 package edu.kystek.pwir.view;
 
 import edu.kystek.pwir.model.AccountType;
+import edu.kystek.pwir.model.Product;
 import edu.kystek.pwir.model.rmi.LoginInformation;
 
 import java.io.IOException;
@@ -58,5 +59,35 @@ public class ConsoleView {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public Product getProductInformation() {
+        String name, producer;
+        int price, quantity;
+
+        printEmptyLine();
+        printLine("Enter product information");
+        printEmptyLine();
+
+        print("Name: ");
+        name = scanner.nextLine();
+
+        print("Producer: ");
+        producer = scanner.nextLine();
+
+        print("Price: ");
+        price = Integer.parseInt(scanner.nextLine());
+
+        print("Quantity: ");
+        quantity = Integer.parseInt(scanner.nextLine());
+
+        return new Product(name, producer, price, quantity);
+    }
+
+    public int getProductToRemoveId() {
+        printEmptyLine();
+        print("Enter ID of product that you want to remove: ");
+        int id = Integer.parseInt(scanner.nextLine());
+        return id;
     }
 }

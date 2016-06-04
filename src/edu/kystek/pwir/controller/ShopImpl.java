@@ -6,6 +6,9 @@ import edu.kystek.pwir.model.Product;
 import edu.kystek.pwir.model.rmi.LoginInformation;
 import edu.kystek.pwir.model.rmi.exception.WrongLoginInformationException;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
@@ -16,10 +19,7 @@ public class ShopImpl extends UnicastRemoteObject implements Shop {
 
     private BlockingQueue<Product> products = new LinkedBlockingDeque<>();
 
-    public ShopImpl() throws RemoteException {
-        products.add(new Product(1, "PC", "Asus", 3000, 20));
-        products.add(new Product(2, "Printer", "HP", 250, 10));
-    }
+    public ShopImpl() throws RemoteException {}
 
     @Override
     public String welcome() throws RemoteException {
@@ -58,5 +58,42 @@ public class ShopImpl extends UnicastRemoteObject implements Shop {
         return products;
     }
 
+    @Override
+    public void addProduct(Product product) {
+        products.add(product);
+        updateDatabase();
+    }
+
+    @Override
+    public void removeProduct(int id) throws RemoteException {
+        Product product = findProductById(id);
+        products.remove(product);
+    }
+
+    private Product findProductById(int id) throws IllegalArgumentException {
+        for (Product product : products) {
+            if (product.getId() == id) {
+                return product;
+            }
+        }
+        throw new IllegalArgumentException(String.format("Product with ID: '%d' not found", id));
+    }
+
+    //FIXME:not writing to file
+    private void updateDatabase() {
+        try {
+            ClassLoader classLoader = getClass().getClassLoader();
+            File file = new File(classLoader.getResource("products").getFile());
+
+            try (PrintWriter writer = new PrintWriter(file)) {
+                for (Product product : products) {
+                    writer.println(product.toString());
+                    System.out.println(product.toString());
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

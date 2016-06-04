@@ -16,4 +16,8 @@ public interface Shop extends Remote {
     AccountType login(LoginInformation loginInformation) throws RemoteException, WrongLoginInformationException;
 
     BlockingQueue<Product> getProductsList() throws RemoteException;
+
+    void addProduct(Product product) throws RemoteException;
+
+    void removeProduct(int id) throws RemoteException;
 }

@@ -41,4 +41,12 @@ public class Client {
     public void stop() {
         System.exit(1);
     }
+
+    public void addProduct(Product product) throws RemoteException {
+        shop.addProduct(product);
+    }
+
+    public void removeProduct(int id) throws RemoteException {
+        shop.removeProduct(id);
+    }
 }
