@@ -2,11 +2,12 @@ package edu.kystek.pwir.view;
 
 import edu.kystek.pwir.model.AccountType;
 import edu.kystek.pwir.model.Product;
+import edu.kystek.pwir.model.menu.customer.ProductProperty;
 import edu.kystek.pwir.model.rmi.LoginInformation;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.concurrent.ExecutionException;
 
 public class ConsoleView {
 
@@ -100,5 +101,40 @@ public class ConsoleView {
         printEmptyLine();
         print("How many?: ");
         return Integer.parseInt(scanner.nextLine());
+    }
+
+    public ProductProperty getProductProperty() {
+        try {
+            printEmptyLine();
+            printLine("Find by: ");
+            printLine("1. ID");
+            printLine("2. Name");
+            printLine("3. Producer");
+            int answer = Integer.parseInt(scanner.nextLine());
+            switch (answer) {
+                case 1:
+                    return ProductProperty.ID;
+                case 2:
+                    return ProductProperty.NAME;
+                case 3:
+                    return ProductProperty.PRODUCER;
+                default:
+                    throw new IllegalArgumentException("Number out of range");
+            }
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Enter a number");
+        }
+    }
+
+    public void printProducts(ArrayList<Product> products) {
+        for (Product product : products) {
+            printLine(product.toString());
+        }
+    }
+
+    public String getFindValue() {
+        printEmptyLine();
+        printLine("Enter value: ");
+        return scanner.nextLine();
     }
 }

@@ -4,6 +4,7 @@ import edu.kystek.pwir.controller.Shop;
 import edu.kystek.pwir.model.AccountType;
 import edu.kystek.pwir.model.Order;
 import edu.kystek.pwir.model.Product;
+import edu.kystek.pwir.model.menu.customer.ProductProperty;
 import edu.kystek.pwir.model.rmi.exception.Connection;
 import edu.kystek.pwir.model.rmi.exception.WrongLoginInformationException;
 
@@ -57,5 +58,69 @@ public class Client {
 
     public ArrayList<Order> getOrders() throws RemoteException{
         return shop.getOrders();
+    }
+
+    public ArrayList<Product> findProduct(String value, ProductProperty property) {
+        ArrayList<Product> products = new ArrayList<>();
+        switch (property) {
+            case ID:
+                products = findByID(value);
+                break;
+            case NAME:
+                products = findByName(value);
+                break;
+            case PRODUCER:
+                products = findByProducer(value);
+                break;
+        }
+        return products;
+    }
+
+    private ArrayList<Product> findByID(String value) {
+        ArrayList<Product> foundProducts = new ArrayList<>();
+        try {
+            ArrayList<Product> allProducts = shop.getProductsList();
+
+            for(Product product : allProducts) {
+                if (product.getId() == Integer.parseInt(value)) {
+                    foundProducts.add(product);
+                }
+            }
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return foundProducts;
+    }
+
+    private ArrayList<Product> findByName(String value) {
+        ArrayList<Product> foundProducts = new ArrayList<>();
+        try {
+            ArrayList<Product> allProducts = shop.getProductsList();
+
+            for(Product product : allProducts) {
+                if (product.getName().equals(value)) {
+                    foundProducts.add(product);
+                }
+            }
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return foundProducts;
+    }
+
+    private ArrayList<Product> findByProducer(String value) {
+        ArrayList<Product> foundProducts = new ArrayList<>();
+        try {
+            ArrayList<Product> allProducts = shop.getProductsList();
+
+            for(Product product : allProducts) {
+                if (product.getProducer().equals(value)) {
+                    foundProducts.add(product);
+                }
+            }
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return foundProducts;
     }
 }
